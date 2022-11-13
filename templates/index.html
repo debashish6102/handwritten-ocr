@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Major Project</title>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <form enctype="multipart/form-data" action="/" method="post">
+      <div class="drag-area">
+        <img src="../static/images/content.jpeg"/>
+        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <header>Drag & Drop to Upload File</header>
+        <span>OR</span>
+        <button onclick="document.getElementById('file').click(); return false;">Browse File</button>
+        <input type="file" id="file"  name="myfile" hidden/>
+      </div>
+
+      <div class="buttons">
+        <input
+          class="btn refresh"
+          type="submit"
+          value="Refresh"
+          onclick="location.reload();"
+        />
+        <input class="btn process" type="submit" value="Process" />
+      </div>
+
+
+    </form>
+
+    <button class="buttons btn" styles="float:right">
+        <i class="fas fa-cloud-download-alt"> Download</i>
+      </button>
+
+    <script src="../static/script.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop or Browse: File Upload | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="drag-area">
+    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+    <header>Drag & Drop to Upload File</header>
+    <span>OR</span>
+    <button>Browse File</button>
+    <input type="file" hidden>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html> -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="split left">
+      <div class="centered">
+        <form action="/">
+          <button class="btn btn1" id="files" onclick="document.getElementById('file').click(); return false;">Upload</button>
+          <input class="btn file" id="file" type="file" style="visibility: hidden;" name="myfile"/>
+          <input class="btn btn2" type="submit" value="Refresh" />
+          <input class="btn btn3" type="submit" value="Process"/>
+        </form>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered">
+        <button class="btn4">Download</button>
+      </div>
+    </div>
+  </body>
+</html> -->
